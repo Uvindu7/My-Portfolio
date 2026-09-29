@@ -84,7 +84,7 @@ body {
   }
 }
 
-@keyframes spin {
+@keyframes slow-spin {
   from {
     transform: rotate(0deg);
   }

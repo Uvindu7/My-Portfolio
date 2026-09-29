@@ -41,9 +41,9 @@ export default function Hero() {
       className="relative flex min-h-screen items-center overflow-hidden px-6 pt-20"
     >
       {/* Purple glow — bottom center */}
-      <div className="pointer-events-none absolute -bottom-60 left-1/2 -z-10 h-[700px] w-[700px] -translate-x-1/2 rounded-full bg-[#7c3aed]/15 blur-[140px]" />
+      <div className="pointer-events-none absolute -bottom-60 left-1/2 -z-10 h-175 w-175 -translate-x-1/2 rounded-full bg-[#7c3aed]/10 blur-[140px]" />
       {/* Cyan hint — top right */}
-      <div className="pointer-events-none absolute -right-40 -top-40 -z-10 h-[400px] w-[400px] rounded-full bg-[#06b6d4]/6 blur-[100px]" />
+      <div className="pointer-events-none absolute -right-40 -top-40 -z-10 h-100 w-100 rounded-full bg-[#06b6d4]/5 blur-[100px]" />
 
       <div className="mx-auto w-full max-w-6xl">
         <div className="flex flex-col items-center gap-12 lg:flex-row lg:justify-between">
@@ -107,13 +107,13 @@ export default function Hero() {
           </div>
 
           {/* Right — profile image */}
-          <div className="relative flex-shrink-0">
+          <div className="relative shrink-0">
             {/* Outer glow ring */}
-            <div className="absolute inset-0 -m-4 rounded-full bg-gradient-to-br from-[#7c3aed]/40 via-[#06b6d4]/20 to-transparent blur-2xl" />
+            <div className="absolute inset-0 -m-4 rounded-full bg-linear-to-br from-[#7c3aed]/40 via-[#06b6d4]/20 to-transparent blur-2xl" />
             {/* Rotating dashed border */}
             <div
               className="absolute inset-0 rounded-full border-2 border-dashed border-[#8b5cf6]/30"
-              style={{ animation: "spin 20s linear infinite" }}
+              style={{ animation: "slow-spin 20s linear infinite" }}
             />
             {/* Image container */}
             <div
@@ -127,7 +127,7 @@ export default function Hero() {
                 className="h-full w-full object-cover object-top"
               />
               {/* Subtle overlay gradient */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-t from-[#0f0f23]/30 via-transparent to-transparent" />
+              <div className="absolute inset-0 rounded-full bg-linear-to-t from-[#0f0f23]/30 via-transparent to-transparent" />
             </div>
             {/* Small decorative dot orbs */}
             <div className="absolute -right-3 -top-3 h-5 w-5 rounded-full bg-[#7c3aed] shadow-[0_0_12px_rgba(124,58,237,0.8)]" />
@@ -137,7 +137,7 @@ export default function Hero() {
 
         <a
           href="#about"
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[#7c3aed]/50 transition-colors hover:text-[#8b5cf6]"
+          className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[#7c3aed80] transition-colors hover:text-[#8b5cf6]"
         >
           <ArrowDown className="animate-bounce" />
         </a>
