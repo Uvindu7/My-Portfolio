@@ -13,7 +13,7 @@
   },
   {
     title: "Database",
-    skills: ["MySQL", "PostgreSQL", "Supabase", "Prisma"],
+    skills: ["MySQL", "PostgreSQL", "Supabase"],
   },
   {
     title: "Tools",

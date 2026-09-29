@@ -60,8 +60,8 @@ export default function Hero() {
 
             <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-400 md:text-xl">
               I build modern web applications and software solutions while
-              exploring the world of machine learning, data, and intelligent
-              systems.
+              continuously improving my skills in computer science and
+              software development.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">

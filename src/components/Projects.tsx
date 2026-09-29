@@ -20,16 +20,18 @@ const projects = [
   },
   {
     number: "02",
-    title: "Feasto",
+    title: "Liyara",
     description:
-      "A food ordering and delivery management platform with user roles, food management, order processing and customer enquiries.",
+      "Liyara is an online fashion store with product browsing, cart management, secure checkout, order tracking, and a 3D virtual fitting studio. It also includes an admin dashboard for managing products, orders, users, reviews, and sales.",
     technologies: [
       "React",
-      "Django",
-      "Django REST",
-      "MySQL",
+      "TailwindCSS",
+      "Node.js",
+      "Superbase",
+      "PostgreSQL",
+      "Stripe"
     ],
-    image: "/projects/feasto.png",
+    image: "/projects/liyara.png",
     github: "https://github.com/",
     demo: "#",
   },
@@ -41,9 +43,8 @@ const projects = [
     technologies: [
       "Next.js",
       "TypeScript",
-      "Prisma",
-      "Supabase",
-      "Cloudinary",
+      "React",
+      "Tailwind CSS",
     ],
     image: "/projects/jungleeye.png",
     github: "https://github.com/",
