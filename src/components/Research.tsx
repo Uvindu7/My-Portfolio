@@ -13,26 +13,28 @@ export default function Research() {
 
         <div className="mt-12 rounded-2xl border border-[#7c3aed]/10 bg-[#0d0f28] p-8 md:p-12">
           <p className="text-sm text-[#8b5cf6]/60">
-            Current Research Interest
+            Current Research
           </p>
 
-          <h2 className="mt-4 max-w-4xl text-3xl font-bold md:text-4xl">
-            Router-Based Network Traffic Analysis for Identifying
-            Excessive Internet Usage Patterns Among University Students
+          <h2 className="mt-4 max-w-4xl text-3xl font-bold leading-tight md:text-4xl">
+            Load-Balanced Multi-Hop Routing for Heterogeneous Wireless Sensor
+            Networks
           </h2>
 
           <p className="mt-6 max-w-3xl leading-8 text-slate-400">
-            Exploring how network traffic data can be analyzed to identify
-            internet usage patterns and provide useful insights for university
-            network environments.
+            Developing a load-balanced routing framework that considers both
+            sensor node energy levels and forwarding workload to dynamically
+            distribute relay traffic, improve energy efficiency, and extend
+            network lifetime.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
             {[
-              "Network Analysis",
-              "Data Analysis",
-              "Machine Learning",
-              "Intelligent Systems",
+              "Wireless Sensor Networks",
+              "Multi-Hop Routing",
+              "Load Balancing",
+              "Energy Efficiency",
+              "Network Optimization",
             ].map((tag) => (
               <span
                 key={tag}
