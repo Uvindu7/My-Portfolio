@@ -38,7 +38,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-screen items-center overflow-hidden px-6 pt-20"
+      className="relative flex min-h-[85vh] items-center overflow-hidden px-6 pt-24 pb-12"
     >
       {/* Purple glow — bottom center */}
       <div className="pointer-events-none absolute -bottom-60 left-1/2 -z-10 h-175 w-175 -translate-x-1/2 rounded-full bg-[#7c3aed]/10 blur-[140px]" />
@@ -137,7 +137,7 @@ export default function Hero() {
 
         <a
           href="#about"
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[#7c3aed80] transition-colors hover:text-[#8b5cf6]"
+          className="absolute bottom-4 left-1/2 -translate-x-1/2 text-[#7c3aed80] transition-colors hover:text-[#8b5cf6]"
         >
           <ArrowDown className="animate-bounce" />
         </a>

@@ -1,8 +1,8 @@
-﻿export default function Education() {
+export default function Education() {
   return (
     <section
       id="education"
-      className="border-t border-[#7c3aed]/10 px-6 py-32"
+      className="border-t border-[#7c3aed]/10 px-6 py-16"
     >
       <div className="mx-auto max-w-6xl">
         <p className="text-sm uppercase tracking-[0.3em] text-[#8b5cf6]/80">

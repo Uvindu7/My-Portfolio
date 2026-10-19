@@ -1,4 +1,4 @@
-﻿const skillGroups = [
+const skillGroups = [
   {
     title: "Languages",
     skills: ["Java", "Python", "JavaScript", "TypeScript", "PHP", "SQL"],
@@ -23,7 +23,7 @@
 
 export default function Skills() {
   return (
-    <section id="skills" className="border-t border-[#7c3aed]/10 px-6 py-32">
+    <section id="skills" className="border-t border-[#7c3aed]/10 px-6 py-16">
       <div className="mx-auto max-w-6xl">
         <p className="text-sm uppercase tracking-[0.3em] text-[#8b5cf6]/80">
           02 — Skills

@@ -1,4 +1,4 @@
-﻿import { Mail, ArrowUpRight } from "lucide-react";
+import { Mail, ArrowUpRight } from "lucide-react";
 
 // Inline SVG for GitHub (removed from lucide-react in newer versions)
 const GithubIcon = ({ size = 18 }: { size?: number }) => (
@@ -30,7 +30,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="border-t border-[#7c3aed]/10 px-6 py-32"
+      className="border-t border-[#7c3aed]/10 px-6 py-16"
     >
       <div className="mx-auto max-w-6xl">
         <p className="text-sm uppercase tracking-[0.3em] text-[#8b5cf6]/80">

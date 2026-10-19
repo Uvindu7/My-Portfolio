@@ -1,4 +1,4 @@
-﻿import { ArrowUpRight, GitBranch } from "lucide-react";
+import { ArrowUpRight, GitBranch } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 
 const projects = [
@@ -54,7 +54,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="border-t border-[#7c3aed]/10 px-6 py-32">
+    <section id="projects" className="border-t border-[#7c3aed]/10 px-6 py-16">
       <div className="mx-auto max-w-6xl">
         <p className="text-sm uppercase tracking-[0.3em] text-[#8b5cf6]/80">
           03 — Projects

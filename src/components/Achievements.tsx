@@ -1,4 +1,4 @@
-﻿import { Trophy, Users, Target } from "lucide-react";
+import { Trophy, Users, Target } from "lucide-react";
 
 const achievements = [
   {
@@ -23,7 +23,7 @@ const achievements = [
 
 export default function Achievements() {
   return (
-    <section className="border-t border-[#7c3aed]/10 px-6 py-32">
+    <section className="border-t border-[#7c3aed]/10 px-6 py-16">
       <div className="mx-auto max-w-6xl">
         <p className="text-sm uppercase tracking-[0.3em] text-[#8b5cf6]/80">
           05 — Beyond Code
