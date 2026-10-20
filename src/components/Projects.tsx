@@ -1,7 +1,20 @@
-import { ArrowUpRight, GitBranch } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 
-const projects = [
+interface Project {
+  number: string;
+  title: string;
+  description: string;
+  technologies: string[];
+  image: string;
+  imageFit?: "cover" | "contain";
+  github?: string;
+  frontend?: string;
+  backend?: string;
+  demo?: string;
+}
+
+const projects: Project[] = [
   {
     number: "01",
     title: "LegalEase",
@@ -15,7 +28,8 @@ const projects = [
       "REST API",
     ],
     image: "/projects/legalease.png",
-    github: "https://github.com/",
+    frontend: "https://github.com/Uvindu7/LeagleEase_Frontend",
+    backend: "https://github.com/Uvindu7/LeagleEase_Backend",
     demo: "#",
   },
   {
@@ -32,7 +46,8 @@ const projects = [
       "Stripe"
     ],
     image: "/projects/liyara.png",
-    github: "https://github.com/",
+    frontend: "https://github.com/Uvindu7/3.2-Project-Front-End",
+    backend: "https://github.com/Uvindu7/3.2-Project-Back-End",
     demo: "#",
   },
   {
@@ -47,7 +62,20 @@ const projects = [
       "Tailwind CSS",
     ],
     image: "/projects/jungleeye.png",
-    github: "https://github.com/",
+    demo: "#",
+  },
+  {
+    number: "04",
+    title: "Alien Shooter",
+    description:
+      "Alien Shooter is a 2D Unity Game developed using Unity and C#. Features interactive gameplay, player movement, obstacle navigation, and custom game mechanics, demonstrating practical skills in game development and programming.",
+    technologies: [
+      "Unity Engine",
+      "C#",
+    ],
+    image: "/projects/alien shooter.jpeg",
+    imageFit: "contain",
+    github: "https://github.com/Uvindu7/Space_Shooter",
     demo: "#",
   },
 ];
@@ -66,7 +94,7 @@ export default function Projects() {
           </h2>
 
           <a
-            href="https://github.com/"
+            href="https://github.com/Uvindu7"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-sm text-slate-400 transition-colors hover:text-[#a78bfa]"
@@ -83,12 +111,28 @@ export default function Projects() {
               className="group overflow-hidden rounded-2xl border border-[#7c3aed]/10 bg-[#0d0f28] transition-all duration-300 hover:border-[#8b5cf6]/30"
             >
               <div className="grid md:grid-cols-2">
-                <div className="aspect-video overflow-hidden bg-[#111338]">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                  />
+                <div className="relative aspect-video md:aspect-auto md:h-full min-h-65 overflow-hidden bg-[#111338] flex items-center justify-center">
+                  {project.imageFit === "contain" ? (
+                    <>
+                      <img
+                        src={project.image}
+                        alt=""
+                        aria-hidden="true"
+                        className="absolute inset-0 h-full w-full object-cover blur-2xl opacity-35 scale-125 pointer-events-none"
+                      />
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="relative z-10 max-h-full md:max-h-75 max-w-full object-contain p-4 md:p-6 drop-shadow-2xl transition duration-500 group-hover:scale-105"
+                      />
+                    </>
+                  ) : (
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                    />
+                  )}
                 </div>
 
                 <div className="flex flex-col justify-center p-8 md:p-12">
@@ -116,25 +160,53 @@ export default function Projects() {
                   </div>
 
                   <div className="mt-8 flex gap-5">
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-sm font-medium"
-                    >
-                      <FaGithub size={17} />
-                      GitHub
-                    </a>
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-sm font-medium"
+                      >
+                        <FaGithub size={17} />
+                        GitHub Repository
+                      </a>
+                    )}
 
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-sm font-medium text-gray-400 hover:text-white"
-                    >
-                      Live Demo
-                      <ArrowUpRight size={17} />
-                    </a>
+                    {project.frontend && (
+                      <a
+                        href={project.frontend}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-sm font-medium"
+                      >
+                        <FaGithub size={17} />
+                        Frontend
+                      </a>
+                    )}
+
+                    {project.backend && (
+                      <a
+                        href={project.backend}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-sm font-medium"
+                      >
+                        <FaGithub size={17} />
+                        Backend
+                      </a>
+                    )}
+
+                    {project.demo && (
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-sm font-medium text-gray-400 hover:text-white"
+                      >
+                        Live Demo
+                        <ArrowUpRight size={17} />
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
