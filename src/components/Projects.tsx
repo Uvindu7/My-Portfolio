@@ -36,7 +36,7 @@ const projects: Project[] = [
     number: "02",
     title: "Liyara",
     description:
-      "Liyara is an online fashion store with product browsing, cart management, secure checkout, order tracking, and a 3D virtual fitting studio. It also includes an admin dashboard for managing products, orders, users, reviews, and sales.",
+      "Liyara is an online fashion store with product browsing, cart management, secure checkout, order tracking, and a 3D virtual fitting studio. It also includes an admin dashboard for managing products, orders, users, reviews and sales.",
     technologies: [
       "React",
       "TailwindCSS",

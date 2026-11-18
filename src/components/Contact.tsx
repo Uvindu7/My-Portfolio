@@ -39,16 +39,16 @@ export default function Contact() {
 
         <div className="mt-10 max-w-3xl">
           <h2 className="text-5xl font-bold leading-tight md:text-7xl">
-            Let&apos;s build something together.
+            Let's build something together.
           </h2>
 
           <p className="mt-8 text-lg leading-8 text-slate-400">
-            I&apos;m currently looking for opportunities to learn, contribute
+            I'm currently looking for opportunities to learn, contribute
             and grow as a software developer.
           </p>
 
           <a
-            href="mailto:your.email@gmail.com"
+            href=" "
             className="btn-glow-purple mt-10 inline-flex items-center gap-3 rounded-full bg-[#7c3aed] px-7 py-4 font-semibold text-white transition-all duration-300 hover:bg-[#8b5cf6]"
           >
             <Mail size={18} />
@@ -58,7 +58,7 @@ export default function Contact() {
 
         <div className="mt-20 flex flex-wrap gap-8 border-t border-[#7c3aed]/10 pt-8">
           <a
-            href="https://github.com/"
+            href="https://github.com/Uvindu7"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-slate-400 transition-colors duration-200 hover:text-[#a78bfa]"
